@@ -3,7 +3,7 @@ Introduction
 
 
 .. image:: https://readthedocs.org/projects/micropython-kx132/badge/?version=latest
-    :target: https://micropython-kx132.readthedocs.io/
+    :target: https://micropython-kx132.readthedocs.io/en/latest/
     :alt: Documentation Status
 
 
