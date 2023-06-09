@@ -36,7 +36,7 @@ classifiers = [
 dynamic = ["dependencies", "optional-dependencies"]
 
 [tool.setuptools]
-py-modules = ["kx132"]
+packages = ["micropython_kx132"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}

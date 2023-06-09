@@ -13,6 +13,7 @@ MicroPython Driver for the Kionix KX132 Accelerometer
 
 """
 
+import time
 from micropython import const
 from micropython_kx132.i2c_helpers import CBits, RegisterStruct
 
@@ -92,7 +93,7 @@ class KX132:
         from machine import Pin, I2C
         import kx132
 
-    Once this is done you can define your `board.I2C` object and define your sensor object
+    Once this is done you can define your `machine.I2C` object and define your sensor object
 
     .. code-block:: python
 
@@ -135,7 +136,7 @@ class KX132:
     # |IIR_BYPASS|LPRO|FSTUP|----|OSA3|OSA2|OSA1|OSA0|
     _output_data_rate = CBits(4, _ODCNTL, 0)
 
-    def __init__(self, i2c: I2C, address: int = 0x1F) -> None:
+    def __init__(self, i2c, address: int = 0x1F) -> None:
         self._i2c = i2c
         self._address = address
 
