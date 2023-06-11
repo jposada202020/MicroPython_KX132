@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["micropython_kx132/kx132.py", "github:jposada202020/MicroPython_KX132/micropython_kx132/kx132.py"],
+    ["micropython_kx132/i2c_helpers.py", "github:jposada202020/MicroPython_KX132/micropython_kx132/i2c_helpers.py"],
+    ["micropython_kx132/__init__.py", "github:jposada202020/MicroPython_KX132/micropython_kx132/__init__.py"]
+  ],
+  "version": "0.1"
+}
