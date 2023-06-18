@@ -79,7 +79,7 @@ class KX132:
     """Driver for the KX132 Sensor connected over I2C.
 
     :param ~machine.I2C i2c: The I2C bus the KX132 is connected to.
-    :param int address: The I2C device address. Defaults to :const:`0x69`
+    :param int address: The I2C device address. Defaults to :const:`0x1F`
 
     :raises RuntimeError: if the sensor is not found
 
@@ -91,7 +91,7 @@ class KX132:
     .. code-block:: python
 
         from machine import Pin, I2C
-        import kx132
+        from micropython_kx132 import kx132
 
     Once this is done you can define your `machine.I2C` object and define your sensor object
 
