@@ -1,4 +1,4 @@
-Micropython KX132 Library
+MicroPython KX132 Library
 =======================================
 
 
