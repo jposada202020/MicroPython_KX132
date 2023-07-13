@@ -16,6 +16,6 @@ while True:
         print("Current Acc range setting: ", kx.acc_range)
         for _ in range(10):
             accx, accy, accz = kx.acceleration
-            print("x:{:.2f}m/s2, y:{:.2f}m/s2, z:{:.2f}m/s2".format(accx, accy, accz))
+            print(f"x:{accx:.2f}g, y:{accy:.2f}g, z:{accz:.2f}g")
             time.sleep(0.5)
         kx.acc_range = acc_range

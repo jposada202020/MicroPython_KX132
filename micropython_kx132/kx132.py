@@ -104,6 +104,8 @@ class KX132:
 
     .. code-block:: python
 
+        accx, accy, accz = kx132.acceleration
+
     """
 
     _device_id = RegisterStruct(_REG_WHOAMI, "B")

@@ -15,12 +15,12 @@ while True:
     print("Current Performance Mode setting: ", kx.performance_mode)
     for _ in range(10):
         accx, accy, accz = kx.acceleration
-        print("x:{:.2f}m/s2, y:{:.2f}m/s2, z:{:.2f}m/s2".format(accx, accy, accz))
+        print(f"x:{accx:.2f}g, y:{accy:.2f}g, z:{accz:.2f}g")
         time.sleep(0.5)
     kx.performance_mode = kx132.LOW_POWER_MODE
     kx.output_data_rate = 3  # 6.25 Hz
     print("Current Performance Mode setting: ", kx.performance_mode)
     for _ in range(10):
         accx, accy, accz = kx.acceleration
-        print("x:{:.2f}m/s2, y:{:.2f}m/s2, z:{:.2f}m/s2".format(accx, accy, accz))
+        print(f"x:{accx:.2f}g, y:{accy:.2f}g, z:{accz:.2f}g")
         time.sleep(0.5)
