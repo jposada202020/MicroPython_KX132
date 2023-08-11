@@ -12,4 +12,5 @@ kx = kx132.KX132(i2c)
 while True:
     accx, accy, accz = kx.acceleration
     print(f"x:{accx:.2f}g, y:{accy:.2f}g, z:{accz:.2f}g")
+    print()
     time.sleep(0.1)

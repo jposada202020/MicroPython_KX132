@@ -143,7 +143,7 @@ class KX132:
         self._address = address
 
         if self._device_id != 0x3D:
-            raise RuntimeError("Failed to find KX132")
+            raise RuntimeError("Failed to find the KX132 sensor")
 
         self._operating_mode = NORMAL_MODE
         self.acc_range = ACC_RANGE_2
@@ -209,9 +209,9 @@ class KX132:
         factor = acc_range_factor[self._acc_range_mem]
 
         return (
-            bufx / 2**15 * factor,
-            bufy / 2**15 * factor,
-            bufz / 2**15 * factor,
+            bufx / 2**15.0 * factor,
+            bufy / 2**15.0 * factor,
+            bufz / 2**15.0 * factor,
         )
 
     @property
@@ -389,9 +389,9 @@ class KX132:
         factor = acc_range_factor[self._acc_range_mem]
 
         return (
-            bufx / 2**15 * factor,
-            bufy / 2**15 * factor,
-            bufz / 2**15 * factor,
+            bufx / 2**15.0 * factor,
+            bufy / 2**15.0 * factor,
+            bufz / 2**15.0 * factor,
         )
 
     @property

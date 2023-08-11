@@ -16,6 +16,7 @@ while True:
     for _ in range(10):
         accx, accy, accz = kx.acceleration
         print(f"x:{accx:.2f}g, y:{accy:.2f}g, z:{accz:.2f}g")
+        print()
         time.sleep(0.5)
     kx.performance_mode = kx132.LOW_POWER_MODE
     kx.output_data_rate = 3  # 6.25 Hz
@@ -23,4 +24,5 @@ while True:
     for _ in range(10):
         accx, accy, accz = kx.acceleration
         print(f"x:{accx:.2f}g, y:{accy:.2f}g, z:{accz:.2f}g")
+        print()
         time.sleep(0.5)

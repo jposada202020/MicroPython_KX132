@@ -15,11 +15,13 @@ while True:
     for _ in range(10):
         adpx, adpy, adpz = kx.advanced_data_path
         print(f"x:{adpx:.2f}g, y:{adpy:.2f}g, z:{adpz:.2f}g")
+        print()
         time.sleep(0.5)
     kx.adp_enabled = kx132.ADP_ENABLED
     print("Current ADP setting: ", kx.adp_enabled)
     for _ in range(10):
         adpx, adpy, adpz = kx.advanced_data_path
         print(f"x:{adpx:.2f}g, y:{adpy:.2f}g, z:{adpz:.2f}g")
+        print()
         time.sleep(0.5)
     kx.soft_reset()

@@ -17,5 +17,6 @@ while True:
         for _ in range(10):
             accx, accy, accz = kx.acceleration
             print(f"x:{accx:.2f}g, y:{accy:.2f}g, z:{accz:.2f}g")
+            print()
             time.sleep(0.5)
         kx.acc_range = acc_range

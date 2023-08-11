@@ -13,5 +13,6 @@ kx.tap_doubletap_enable = kx132.TDTE_ENABLED
 
 while True:
     print(f"Status: {kx.tap_doubletap_report}")
+    print()
     kx.interrupt_release()
     time.sleep(0.3)

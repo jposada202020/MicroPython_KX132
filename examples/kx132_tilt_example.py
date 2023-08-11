@@ -13,4 +13,5 @@ kx.tilt_position_enable = kx132.TILT_ENABLED
 
 while True:
     print(f"Current position {kx.tilt_position}")
+    print()
     time.sleep(0.3)
